@@ -5,9 +5,4 @@ import Footer from './components/FooterComponent.vue'
 
 <template>
   <Navbar />
-  <h1>
-    teste
-  </h1>
-  <Footer />
-
 </template>
