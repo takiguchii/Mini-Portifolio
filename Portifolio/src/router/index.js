@@ -3,7 +3,7 @@ import AboutMeView from '../views/AboutMeView.vue'
 import ContactView from '../views/ContactView.vue'
 import MyprojectsView from '../views/MyprojectsView.vue'
 
-const routes = createRouter({
+const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
@@ -13,15 +13,17 @@ const routes = createRouter({
     }
     ,
     {
-      path: 'contact',
+      path: '/contact',
       name: 'contact',
       component: ContactView
     },
     {
-      path: 'projects',
+      path: '/projects',
       name: 'projects',
       component: MyprojectsView
     }
 
   ],  
 })
+export default router
+
