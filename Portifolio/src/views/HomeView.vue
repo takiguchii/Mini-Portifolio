@@ -1,7 +1,7 @@
 <template>
     <div class="flex">
-        <div class="fixed left-16 top-32 w-[320px] p-8 h-[600px] bg-white rounded-xl shadow-md text-center">
-            <div class="w-[220px] h-[220px] mx-auto mb-6 overflow-hidden rounded-full">
+        <div class="fixed left-16 top-32 w-[320px] p-8 h-[600px] bg-white rounded-xl shadow-md text-center transition-transform hover:scale-105">
+            <div class="w-[220px] h-[220px] mx-auto mb-6 overflow-hidden rounded-full ">
                 <img src="../img/Perfil.jpg" alt="Profile Picture" class="w-full h-full object-cover">
             </div>
             <h2 class="text-2xl font-semibold mb-2 text-gray-800">Alexandre Takiguchi</h2>
@@ -28,7 +28,7 @@
                 </p>
                 <hr>
 
-                <div class="flex items-center space-x-4">
+                <div class="flex items-center space-x-4 hover:translate-x-2 transition-transform duration-300">
                     <img src="https://skillicons.dev/icons?i=cs" height="40" alt="csharp logo" />
                     <img width="12" />
                     <img src="https://skillicons.dev/icons?i=html" height="40" alt="html5 logo" />

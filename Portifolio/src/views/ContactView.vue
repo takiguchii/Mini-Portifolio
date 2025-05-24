@@ -13,6 +13,7 @@
                          alt="Github">
                     <p class="text-gray-800 mt-4 text-xl font-semibold">Github</p>
                 </a>
+
                 <a href="https://www.linkedin.com/in/alexandre-takiguchi-39214b312/" 
                    target="_blank" 
                    class="contact-card">
@@ -21,6 +22,7 @@
                          alt="Linkedin">
                     <p class="text-gray-800 mt-4 text-xl font-semibold">LinkedIn</p>
                 </a>
+                
                 <a href="https://www.instagram.com/takiguchi_al/" 
                    target="_blank" 
                    class="contact-card">
