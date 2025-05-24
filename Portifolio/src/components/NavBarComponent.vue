@@ -3,15 +3,14 @@
         <h1 class="text-lg font-bold">Mini-Portifolio</h1>
         <ul class="flex gap-6">
             <li>
-                <router-link to="/AboutMe" class="hover:underline">Home</router-link>
+                <router-link to="/" class="hover:underline">Home</router-link>
             </li>
             <li>
-                <router-link to=" " class="hover:underline">Sobre</router-link>
+                <router-link to="/about-me" class="hover:underline">Sobre</router-link>
             </li>
             <li>
                 <router-link to="/contact" class="hover:underline">Contato</router-link>
             </li>
-
         </ul>
     </nav>
 </template>
