@@ -4,40 +4,35 @@
             <b>Entre em Contato</b>
         </h3>
 
-        <!-- formilario-->
-        <section class="bg-white shadow-xl rounded-xl py-12 px-8 max-w-3xl mx-auto mb-16">
-            <form @submit.prevent="handleSubmit" class="space-y-6">
-                <div>
-                    <label for="name" class="block text-gray-700 font-medium mb-2">Nome</label>
-                    <input type="text" 
-                           id="name" 
-                           v-model="formData.name"
-                           class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-[#1b4480]"
-                           required>
-                </div>
-                
-                <div>
-                    <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
-                    <input type="email" 
-                           id="email" 
-                           v-model="formData.email"
-                           class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-[#1b4480]"
-                           required>
-                </div>
+        <!-- formulario simples -->
+        <section class="bg-white shadow-xl rounded-xl py-8 px-6 max-w-3xl mx-auto mb-16">
+            <form class="space-y-4">
+            <div>
+                <input type="text" 
+                   placeholder="Nome"
+                   class="w-full px-4 py-2 border rounded-lg"
+                   required>
+            </div>
+            
+            <div>
+                <input type="email" 
+                   placeholder="Email"
+                   class="w-full px-4 py-2 border rounded-lg"
+                   required>
+            </div>
 
-                <div>
-                    <label for="message" class="block text-gray-700 font-medium mb-2">Mensagem</label>
-                    <textarea id="message" 
-                              v-model="formData.message"
-                              rows="4"
-                              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-[#1b4480]"
-                              required></textarea>
-                </div>
+            <div>
+                <textarea 
+                placeholder="Mensagem"
+                rows="3"
+                class="w-full px-4 py-2 border rounded-lg"
+                required></textarea>
+            </div>
 
-                <button type="submit" 
-                        class="w-full bg-[#1b4480] text-white py-2 px-4 rounded-lg hover:bg-[#143465] transition-colors">
-                    Enviar Mensagem
-                </button>
+            <button type="submit" 
+                class="w-full bg-[#1b4480] text-white py-2 px-4 rounded-lg">
+                Enviar
+            </button>
             </form>
         </section>
 
@@ -95,28 +90,3 @@
     </div>
 </template>
 
-<script>
-export default {
-    data() {
-        return {
-            formData: {
-                name: '',
-                email: '',
-                message: ''
-            }
-        }
-    },
-    methods: {
-        handleSubmit() {
-            // Aqui você pode adicionar a lógica para enviar o formulário
-            console.log('Formulário enviado:', this.formData)
-            // Limpar o formulário após envio
-            this.formData = {
-                name: '',
-                email: '',
-                message: ''
-            }
-        }
-    }
-}
-</script>
